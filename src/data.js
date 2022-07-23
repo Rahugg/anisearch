@@ -18,7 +18,7 @@ export const data = [
     author: "Itachi",
     anime: "Naruto",
     image: "Itachi",
-    quote: "Growth occurs when one goes beyond one\u2019s limits."
+    quote: "Growth occurs when one goes beyond one's limits."
 },
 {
     key: "4",
