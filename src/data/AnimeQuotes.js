@@ -1,8 +1,8 @@
-import Itachi from './components/assets/ItachiUchiha.jpeg';
-import Neji from './components/assets/NejiHyuga.jpeg';
-import Gaara from './components/assets/Gaara.jpeg';
-import Sasuke from './components/assets/Sasuke.jpg';
-import Pain from './components/assets/Pain.jpeg';
+import Itachi from './assets/ItachiUchiha.jpeg'
+import Neji from './assets/NejiHyuga.jpeg';
+import Gaara from './assets/Gaara.jpeg';
+import Sasuke from './assets/Sasuke.jpg';
+import Pain from './assets/Pain.jpeg';
 
 export const Quotedata = [
 {

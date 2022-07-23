@@ -1,34 +1,18 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Anime from "./components/Anime/Anime";
-import MainContent from './components/MainContent/MainContent';import "./App.css";
-import {Quotedata} from "./AnimeQuotes.js";
+import MainContent from "./components/MainContent/MainContent";
+import "./App.css";
 
 function App() {
-  const [animeList, setAnimeList] = useState(Quotedata);
-  const [search, SetSearch] = useState("");
-
-  const HandleSearch = (e) => {
-    e.preventDefault();
-
-    setAnimeList(search);
-  };
-
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/anime" element={<Anime />} />
+        <Route path="/Anime" element={<Anime />} />
+        <Route path='/' element ={<MainContent/>}/>
       </Routes>
-      <div className="content-wrap">
-        <MainContent
-          HandleSearch={HandleSearch}
-          search={search}
-          SetSearch={SetSearch}
-          animeList={animeList}
-        />
-      </div>
     </BrowserRouter>
   );
 }
