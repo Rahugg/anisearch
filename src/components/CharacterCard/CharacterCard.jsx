@@ -5,17 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-
-function CharacterCard({anime}) {
+function CharacterCard({ anime }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardHeader
-        title={anime.author}
-        subheader={anime.anime}
-      />
+    <Card sx={{ maxWidth: 345}}>
+      <CardHeader title={anime.author} subheader={anime.anime} />
       <CardMedia
         component="img"
-        height="194"
         image={anime.image}
         alt={anime.author}
       />

@@ -11,7 +11,8 @@ function Searchbox({ placeholder, data }) {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
+
+      return value.quote.toLowerCase().includes(searchWord.toLowerCase());
     });
 
     if (searchWord === "") {
@@ -20,12 +21,13 @@ function Searchbox({ placeholder, data }) {
       setFilteredData(newFilter);
     }
   };
-
+  
   const clearInput = () => {
     setFilteredData([]);
     setWordEntered("");
   };
-
+  console.log(filteredData);
+  
   return (
     <div className="search">
       <div className="searchInputs">

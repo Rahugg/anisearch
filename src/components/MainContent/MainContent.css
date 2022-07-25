@@ -1,0 +1,8 @@
+
+.gridContainer {
+  padding-left: 40px;
+}
+.main-search {
+  display: flex;
+  justify-content: center;
+}

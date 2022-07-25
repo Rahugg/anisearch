@@ -106,7 +106,13 @@ const Header = () => {
           >
             Anisearch
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "space-evenly",
+            }}
+          >
             {pages.map((page) => (
               <Link to={`/${page}`}>
                 <Button
@@ -117,6 +123,7 @@ const Header = () => {
                     color: "#191919",
                     display: "block",
                     fontFamily: "'Courier New', Courier, monospace",
+                    fontSize : '17px',
                   }}
                 >
                   {page}
