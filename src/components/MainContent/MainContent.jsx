@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 import CharacterCard from "../CharacterCard/CharacterCard";
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 import Searchbox from "../Searchbox/Searchbox";
 import { Quotedata } from "../../data/AnimeQuotes";
 import "./MainContent.css";
 
 function MainContent() {
   const [animeList, setAnimeList] = useState(Quotedata);
+  const [filteredData, setFilteredData] = useState([]);
 
   return (
     <main>
       <div className="container-main">
         <div className="main-search">
-          <Searchbox placeholder="Enter an anime quote..." data={animeList} />
+          <Searchbox
+            placeholder="Enter an anime quote..."
+            data={animeList}
+            setFilteredData={setFilteredData}
+            filteredData={filteredData}
+          />
         </div>
         <div className="container-anime">
           <Grid
@@ -22,11 +28,17 @@ function MainContent() {
             justifyItems="center"
             style={{ marginTop: "20px" }}
           >
-            {animeList.map((anime) => (
-              <Grid key={anime.key} item xs={12} sm={6} md={4}>
-                <CharacterCard anime={anime} key={anime.key} />
-              </Grid>
-            ))}
+            {filteredData.length === 0
+              ? animeList.map((anime) => (
+                  <Grid key={anime.key} item xs={12} sm={6} md={4}>
+                    <CharacterCard anime={anime} key={anime.key} />
+                  </Grid>
+                ))
+              : filteredData.map((anime) => (
+                  <Grid key={anime.key} item xs={12} sm={6} md={4}>
+                    <CharacterCard anime={anime} key={anime.key} />
+                  </Grid>
+                ))}
           </Grid>
         </div>
       </div>

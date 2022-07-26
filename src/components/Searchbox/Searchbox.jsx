@@ -3,15 +3,14 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Searchbox.css";
 
-function Searchbox({ placeholder, data }) {
-  const [filteredData, setFilteredData] = useState([]);
+function Searchbox({ placeholder, data, setFilteredData, filteredData}) {
+  
   const [wordEntered, setWordEntered] = useState("");
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
-
       return value.quote.toLowerCase().includes(searchWord.toLowerCase());
     });
 
@@ -45,7 +44,7 @@ function Searchbox({ placeholder, data }) {
           )}
         </div>
       </div>
-      {filteredData.length != 0 && (
+      {/* {filteredData.length != 0 && (
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
@@ -55,7 +54,7 @@ function Searchbox({ placeholder, data }) {
             );
           })}
         </div>
-      )}
+      )} */}
     </div>
   );
 }
