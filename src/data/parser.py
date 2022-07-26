@@ -17,7 +17,7 @@ with open("quotes.csv", "r") as f:
 
 
 
-with open('data.json', 'w') as f:
+with open('AnimeQuotes.js', 'w') as f:
     f.write('[\n')
     for i in range(len(arr)):
         f.write(json.dumps(arr[i], indent=4))
