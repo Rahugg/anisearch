@@ -6,7 +6,7 @@ import { Quotedata } from "../../data/AnimeQuotes";
 import "./MainContent.css";
 
 function MainContent() {
-  const [animeList, setAnimeList] = useState(Quotedata);
+  const [animeList] = useState(Quotedata);
   const [filteredData, setFilteredData] = useState([]);
 
   return (
@@ -28,17 +28,15 @@ function MainContent() {
             justifyItems="center"
             style={{ marginTop: "20px" }}
           >
-            {filteredData.length === 0
-              ? animeList.map((anime) => (
-                  <Grid key={anime.key} item xs={12} sm={6} md={4}>
-                    <CharacterCard anime={anime} key={anime.key} />
-                  </Grid>
-                ))
-              : filteredData.map((anime) => (
-                  <Grid key={anime.key} item xs={12} sm={6} md={4}>
-                    <CharacterCard anime={anime} key={anime.key} />
-                  </Grid>
-                ))}
+            {filteredData.length === 0 ? (
+              <p class="line-1 anim-typewriter">Welcome to Anisearch!</p>
+            ) : (
+              filteredData.map((anime) => (
+                <Grid key={anime.key} item xs={12} sm={6} md={2}>
+                  <CharacterCard anime={anime} key={anime.key} />
+                </Grid>
+              ))
+            )}
           </Grid>
         </div>
       </div>

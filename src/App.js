@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Anime from "./components/Anime/Anime";
 import MainContent from "./components/MainContent/MainContent";
 import "./App.css";
+import RandomQuote from "./components/RandomQuote/RandomQuote";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/Anime" element={<Anime />} />
         <Route path='/' element ={<MainContent/>}/>
+        <Route path='RandomQuote' element ={<RandomQuote/>}/>
       </Routes>
     </BrowserRouter>
   );
