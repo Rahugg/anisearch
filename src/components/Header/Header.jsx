@@ -75,7 +75,6 @@ const Header = () => {
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
               }}
@@ -123,7 +122,7 @@ const Header = () => {
                     color: "#191919",
                     display: "block",
                     fontFamily: "'Courier New', Courier, monospace",
-                    fontSize : '17px',
+                    fontSize: "17px",
                   }}
                 >
                   {page}
@@ -150,9 +149,11 @@ const Header = () => {
               onClose={handleCloseUserMenu}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <Link to={`/${page}`}>
+                  <MenuItem key={page} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
