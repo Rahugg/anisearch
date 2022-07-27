@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
 }
+@media (min-width: 370px) {
+  .gridContainer {
+    padding-left: 0px;
+    padding-top: -32px;
+
+  }
+}
+
 .line-1 {
   position: relative;
   top: 40%;

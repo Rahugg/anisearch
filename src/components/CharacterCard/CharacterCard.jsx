@@ -15,7 +15,7 @@ function CharacterCard({ anime }) {
           <p>Quote: {anime.quote}</p>
           <Link
           className="btn btn-primary btn-details"
-          to={"/Anime/" + anime.key}
+          to={"/character/" + anime.key}
         >Details</Link>
         </div>
       </Card>
