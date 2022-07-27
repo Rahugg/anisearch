@@ -33,7 +33,7 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.cocktail {
+.animelist {
   background: var(--mainWhite);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
@@ -43,21 +43,21 @@ p {
   margin: 1.5rem;
   width:340px;
 }
-.cocktail:hover {
+.animelist:hover {
   box-shadow: var(--darkShadow);
 }
-.cocktail-footer {
+.animelist-footer {
   padding: 1.5rem;
 }
-.cocktail-footer h3,
-.cocktail-footer h4,
-.cocktail-footer p {
+.animelist-footer h3,
+.animelist-footer h4,
+.animelist-footer p {
   margin-bottom: 0.3rem;
 }
-.cocktail-footer h3 {
+.animelist-footer h3 {
   font-size: 2rem;
 }
-.cocktail-footer p {
+.animelist-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
 

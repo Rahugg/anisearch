@@ -32,7 +32,7 @@ function MainContent() {
               <p class="line-1 anim-typewriter">Welcome to Anisearch!</p>
             ) : (
               filteredData.map((anime) => (
-                <Grid key={anime.key} item xs={12} sm={6} md={2}>
+                <Grid key={anime.key} item xs={12} sm={6} md={4}>
                   <CharacterCard anime={anime} key={anime.key} />
                 </Grid>
               ))
