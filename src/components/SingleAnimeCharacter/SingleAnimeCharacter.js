@@ -1,17 +1,22 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import './SingleAnimeCharacter.css';
+import "./SingleAnimeCharacter.css";
 
-const SingleAnimeCharacter = ({ anime }) => {
+const SingleAnimeCharacter = ({ anime: array }) => {
+  const {Id}  = useParams();
+  const anime = array.find((a) => a.key === Id)
+    console.log(anime);
   return (
     <>
       <section className="section Singlecharacter-section">
         <Link to={"/"} className="btn btn-primary">
           Back Home
-        </Link>
-        <h2></h2>
+        </Link> 
         <div className="Singlecharacter">
-          <img src={anime.image} alt={anime.author} />
+          <img
+            src={anime.image}
+            alt={anime.author}
+          />
           <div className="Singlecharacter-info">
             <p>
               <span className="Singlecharacter-data">Anime:</span>
@@ -26,8 +31,8 @@ const SingleAnimeCharacter = ({ anime }) => {
               {anime.age}
             </p>
             <p>
-              <span className="Singlecharacter-data">Sex:</span>
-              {anime.sex}
+              <span className="Singlecharacter-data">Episode:</span>
+              {anime.episode}
             </p>
             <p>
               <span className="Singlecharacter-data"> Birthday:</span>

@@ -25,7 +25,6 @@ function Searchbox({ placeholder, data, setFilteredData, filteredData}) {
     setFilteredData([]);
     setWordEntered("");
   };
-  console.log(filteredData);
   
   return (
     <div className="search">

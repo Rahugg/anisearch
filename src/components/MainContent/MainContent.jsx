@@ -29,7 +29,11 @@ function MainContent() {
             style={{ marginTop: "20px" }}
           >
             {filteredData.length === 0 ? (
-              <p class="line-1 anim-typewriter">Welcome to Anisearch!</p>
+              animeList.map((anime) => (
+                <Grid key={anime.key} item xs={12} sm={6} md={4}>
+                  <CharacterCard anime={anime} key={anime.key} />
+                </Grid>
+              ))
             ) : (
               filteredData.map((anime) => (
                 <Grid key={anime.key} item xs={12} sm={6} md={4}>

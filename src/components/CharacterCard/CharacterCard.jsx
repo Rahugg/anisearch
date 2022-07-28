@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useParams} from 'react';
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -15,7 +15,7 @@ function CharacterCard({ anime }) {
           <p>Quote: {anime.quote}</p>
           <Link
           className="btn btn-primary btn-details"
-          to={"/character/" + anime.key}
+          to={'/character/'+anime.key}
         >Details</Link>
         </div>
       </Card>

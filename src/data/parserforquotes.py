@@ -13,7 +13,7 @@ with open("quotes.csv", "r") as f:
                 "image": row[3],
                 "quote": row[4],
                 "age": row[5],
-                "sex": row[6],
+                "episode": row[6],
                 "birthday":row[7],
                 "power1":row[8],
                 "power2":row[9],
