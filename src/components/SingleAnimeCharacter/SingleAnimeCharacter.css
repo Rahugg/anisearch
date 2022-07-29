@@ -95,6 +95,9 @@ ANIMECARD SECTION
     text-align: center;
   }
   .SingleAnimeCharacter {
+    position: absolute;
+    top:20%;
+    left:25%;
     width: var(--smallWidth);
     max-width: var(--fullWidth);
     margin: 0 auto;
@@ -104,6 +107,7 @@ ANIMECARD SECTION
     border-radius: var(--mainBorderRadius);
   }
   .SingleAnimeCharacter-info p {
+    
     font-weight: bold;
     text-transform: capitalize;
     line-height: 1.8;
@@ -119,4 +123,7 @@ ANIMECARD SECTION
   }
   .SingleAnimeCharacter-info {
     padding-top: 2rem;
+    position: absolute;
+    top:30%;
+    left:50%;
   }

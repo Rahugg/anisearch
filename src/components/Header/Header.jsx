@@ -105,7 +105,7 @@ const Header = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "space-evenly",
+              justifyContent: "space-around",
             }}
           >
             {pages.map((page) => (
