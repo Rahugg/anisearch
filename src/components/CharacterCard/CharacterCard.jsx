@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import './Character.css';
+import './Charactercard.css';
 
 function CharacterCard({ anime }) {
   return (
