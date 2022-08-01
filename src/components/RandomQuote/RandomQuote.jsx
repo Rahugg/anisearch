@@ -8,7 +8,7 @@ const RandomQuote = () => {
     quote: null,
   });
 
-  const activate = async () => {
+  const activatee = async () => {
     setQuote(
       await fetch("https://animechan.vercel.app/api/random").then((response) =>
         response.json()
@@ -19,7 +19,7 @@ const RandomQuote = () => {
   return (
     <div className="App">
       <Quote quote={quote} />
-      <button onClick={activate}>Generate new Quote</button>
+      <button onClick={activatee}>Generate new Quote</button>
     </div>
   );
 };
