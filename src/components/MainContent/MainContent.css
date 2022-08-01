@@ -13,10 +13,16 @@
   .container-anime{
     grid-gap:50px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
 }
 @media screen and (max-width:700px){
+  .container-anime{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:425px){
   .container-anime{
     display: grid;
     grid-template-columns: repeat(1,1fr);
