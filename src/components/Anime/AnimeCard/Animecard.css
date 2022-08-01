@@ -33,6 +33,47 @@ p {
   margin-bottom: 1.25rem;
 }
 
+/* 
+CONTAINER OF ANIME 
+*/
+.containerOfAnimeSection{
+  grid-gap:100px;
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: repeat(4,1fr);
+}
+@media screen and (max-width: 1600px){
+  .containerOfAnimeSection{
+    grid-gap:25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 1200px){
+  .containerOfAnimeSection{
+    grid-gap:25px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    justify-items: center;
+  }
+}
+@media screen and (max-width:700px){
+  .containerOfAnimeSection{
+
+    /* margin-left:50px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+/*
+ANIME SECTION
+*/
 .animelist {
   background: var(--mainWhite);
   margin-bottom: 2rem;
@@ -40,8 +81,7 @@ p {
   transition: var(--mainTransition);
   border-radius: var(--mainBorderRadius);
   padding: 1rem;
-  width:340px;
-  display: flex;
+  width: 340px;
 }
 .animelist:hover {
   box-shadow: var(--darkShadow);
@@ -60,7 +100,6 @@ p {
 .animelist-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
-
 }
 /*
 BUTTONS
