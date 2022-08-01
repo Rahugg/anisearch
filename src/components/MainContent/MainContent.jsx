@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CharacterCard from "../CharacterCard/CharacterCard";
-import Grid from "@mui/material/Grid";
 import Searchbox from "../Searchbox/Searchbox";
 import { Quotedata } from "../../data/AnimeQuotes";
 import "./MainContent.css";
@@ -21,27 +20,13 @@ function MainContent() {
           />
         </div>
         <div className="container-anime">
-          <Grid
-            container
-            spacing={4}
-            className={"gridContainer"}
-            justifyItems="center"
-            style={{ marginTop: "20px" }}
-          >
-            {filteredData.length === 0 ? (
-              animeList.map((anime) => (
-                <Grid key={anime.key} item xs={12} sm={6} md={4}>
-                  <CharacterCard anime={anime} key={anime.key} />
-                </Grid>
+          {filteredData.length === 0
+            ? animeList.map((anime) => (
+                <CharacterCard anime={anime} key={anime.key} />
               ))
-            ) : (
-              filteredData.map((anime) => (
-                <Grid key={anime.key} item xs={12} sm={6} md={4}>
-                  <CharacterCard anime={anime} key={anime.key} />
-                </Grid>
-              ))
-            )}
-          </Grid>
+            : filteredData.map((anime) => (
+                <CharacterCard anime={anime} key={anime.key} />
+              ))}
         </div>
       </div>
     </main>
