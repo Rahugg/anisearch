@@ -9,7 +9,7 @@
   margin-top: 25px;
   grid-template-columns: repeat(4,1fr);
 }
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1600px){
   .container-anime{
     grid-gap:25px;
     display: grid;
