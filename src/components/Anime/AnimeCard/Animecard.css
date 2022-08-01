@@ -41,6 +41,7 @@ p {
   border-radius: var(--mainBorderRadius);
   padding: 1rem;
   width:340px;
+  display: flex;
 }
 .animelist:hover {
   box-shadow: var(--darkShadow);
