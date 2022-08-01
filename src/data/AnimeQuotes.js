@@ -16,7 +16,7 @@ export const Quotedata = [
     birthday: "June 9",
     power1: "Susanoo",
     power2: "Izanami",
-    power3: "Demonic Illusion: Mirage Crow   "
+    power3: "Demonic Illusion: Mirage Crow "
 },
 {
     key: "2",
