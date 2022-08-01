@@ -14,7 +14,7 @@ const Animecard = ({ anime }) => {
         <p>Genre: {anime.genre}</p>
         <Link
           className="btn btn-primary btn-details"
-          to={"/Anime/" + anime.key}
+          to={"/Anime/" + anime.anime}
         >
           Details
         </Link>

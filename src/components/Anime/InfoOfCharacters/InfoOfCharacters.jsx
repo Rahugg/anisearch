@@ -1,14 +1,12 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import "../Anime/AnimeCard/Animecard.css";
+import "../AnimeCard/Animecard.css";
 
-const Animecharacters = ({ anime: array }) => {
+const InfoOfCharacters = ({ anime: array }) => {
   const { Idchar } = useParams();
-
-  const characterList = array.filter((a) => a.anime === Idchar);
-
+  const characterList = array.filter((a) => a.author === Idchar);
   return characterList.map((anime) => (
     <article className="animelist">
       <Card sx={{ maxWidth: 345 }}>
@@ -16,16 +14,11 @@ const Animecharacters = ({ anime: array }) => {
         <div className="animelist-footer">
           <h3>Character: {anime.author}</h3>
           <h4>Anime: {anime.anime}</h4>
-          <Link
-            className="btn btn-primary btn-details"
-            to={"/Anime/Characters/" + anime.author}
-          >
-            Details
-          </Link>
+          <p>Quote: {anime.quote}</p>
         </div>
       </Card>
     </article>
   ));
 };
 
-export default Animecharacters;
+export default InfoOfCharacters;

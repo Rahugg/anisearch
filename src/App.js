@@ -6,6 +6,7 @@ import MainContent from "./components/MainContent/MainContent";
 import RandomQuote from "./components/RandomQuote/RandomQuote";
 import SingleAnimeCharacter from "./components/SingleAnimeCharacter/SingleAnimeCharacter";
 import Animecharacters from "./components/Animecharacters/Animecharacters";
+import InfoOfCharacters from "./components/Anime/InfoOfCharacters/InfoOfCharacters";
 
 import { Quotedata } from "./data/AnimeQuotes";
 import { CharactersData } from "./data/Characters";
@@ -26,6 +27,11 @@ function App() {
         <Route
           path="/Anime/:Idchar"
           element={<Animecharacters anime={CharactersData} />}
+        />
+
+        <Route
+          path="/Anime/Characters/:Idchar"
+          element={<InfoOfCharacters anime={Quotedata} />}
         />
       </Routes>
     </BrowserRouter>
