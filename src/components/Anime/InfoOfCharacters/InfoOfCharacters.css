@@ -1,0 +1,63 @@
+.container-anime{
+    grid-gap:100px;
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: repeat(4,1fr);
+  }
+  @media screen and (max-width: 1600px){
+    .container-anime{
+      grid-gap:25px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      text-align: center;
+      justify-items: center;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    .container-anime{
+      grid-gap:25px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      text-align: center;
+      justify-items: center;
+    }
+  }
+  @media screen and (max-width:700px){
+    .container-anime{
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-items: center;
+    }
+  }
+
+
+.mainCharacterList {
+    background: var(--mainWhite);
+    margin-bottom: 2rem;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+    border-radius: var(--mainBorderRadius);
+    padding: 1rem;
+    width:340px;
+    display: flex;
+  }
+  .mainCharacterList:hover {
+    box-shadow: var(--darkShadow);
+  }
+  .mainCharacterList-footer {
+    padding: 1.5rem;
+  }
+  .mainCharacterList-footer h3,
+  .mainCharacterList-footer h4,
+  .mainCharacterList-footer p {
+    margin-bottom: 0.3rem;
+  }
+  .mainCharacterList-footer h3 {
+    font-size: 2rem;
+  }
+  .mainCharacterList-footer p {
+    color: var(--darkGrey);
+    margin-bottom: 0.5rem;
+  
+  }

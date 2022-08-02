@@ -74,30 +74,13 @@ BUTTONS
 /*
 ANIMECARD SECTION
 */
-.row:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-.column2{
-  float: right;
-  width: 50%;
-  padding: 10px;
-}
 
 
 .SingleAnimeCharacter-section {
     text-align: center;
+
   }
   .SingleAnimeCharacter {
-    position: absolute;
-    top:20%;
-    left:25%;
     width: var(--smallWidth);
     max-width: var(--fullWidth);
     margin: 0 auto;
@@ -123,7 +106,5 @@ ANIMECARD SECTION
   }
   .SingleAnimeCharacter-info {
     padding-top: 2rem;
-    position: absolute;
-    top:30%;
-    left:50%;
+  
   }
