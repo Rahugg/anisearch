@@ -80,7 +80,6 @@ ANIMECARD SECTION
   justify-content: center;
 }
 .containerForSingleCharacter {
-  display: flex;
   justify-content: center;
 }
 .image__character {
@@ -88,7 +87,7 @@ ANIMECARD SECTION
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
   border-radius: var(--mainBorderRadius);
-  width: 340px;
+  width: 400px;
   display: flex;
 }
 .SingleAnimeCharacter-section {
