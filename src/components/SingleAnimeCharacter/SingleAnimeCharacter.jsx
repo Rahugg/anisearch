@@ -6,7 +6,7 @@ import "./SingleAnimeCharacter.css";
 
 const SingleAnimeCharacter = ({ anime: array }) => {
   const { Id } = useParams();
-  const anime = array.find((a) => a.author === Id);
+  const anime = array.find((a) => a.key === Id);
 
   return (
     <>
