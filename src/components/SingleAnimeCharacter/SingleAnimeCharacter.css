@@ -74,23 +74,59 @@ BUTTONS
 /*
 ANIMECARD SECTION
 */
-
-
+.container__for__button {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+.containerForSingleCharacter {
+  display: flex;
+  justify-content: center;
+}
+.image__character {
+  background: var(--mainWhite);
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  border-radius: var(--mainBorderRadius);
+  width: 340px;
+  display: flex;
+}
 .SingleAnimeCharacter-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+.SingleAnimeCharacter-info p {
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.8;
+}
+.SingleAnimeCharacter-info span {
+  margin-right: 0.5rem;
+}
+.SingleAnimeCharacter-data {
+  background: var(--primaryLightColor);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--mainBorderRadius);
+  color: var(--primaryColor);
+}
+.SingleAnimeCharacter-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.25rem 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .SingleAnimeCharacter-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
-
-  }
-  .SingleAnimeCharacter {
-    width: var(--smallWidth);
-    max-width: var(--fullWidth);
-    margin: 0 auto;
-    text-align: left;
-  }
-  .SingleAnimeCharacter img {
-    border-radius: var(--mainBorderRadius);
+    justify-items: center;
+    margin-top: 3rem;
   }
   .SingleAnimeCharacter-info p {
-    
     font-weight: bold;
     text-transform: capitalize;
     line-height: 1.8;
@@ -105,6 +141,36 @@ ANIMECARD SECTION
     color: var(--primaryColor);
   }
   .SingleAnimeCharacter-info {
-    padding-top: 2rem;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.25rem 5rem;
   }
+}
+@media screen and (max-width: 700px) {
+  .SingleAnimeCharacter-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+  .SingleAnimeCharacter-info p {
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.8;
+  }
+  .SingleAnimeCharacter-info span {
+    margin-right: 0.5rem;
+  }
+  .SingleAnimeCharacter-data {
+    background: var(--primaryLightColor);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--mainBorderRadius);
+    color: var(--primaryColor);
+  }
+  .SingleAnimeCharacter-info {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem 5rem;
+  }
+}

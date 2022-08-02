@@ -29,8 +29,6 @@
 }
 @media screen and (max-width:700px){
   .container-anime{
-
-    /* margin-left:50px; */
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
