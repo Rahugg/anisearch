@@ -3,6 +3,7 @@ import CharacterCard from "../CharacterCard/CharacterCard";
 import Searchbox from "../Searchbox/Searchbox";
 import { Quotedata } from "../../data/AnimeQuotes";
 import "./MainContent.css";
+import MainGif from "../../data/assets/Naruto.gif";
 
 function MainContent() {
   const [animeList] = useState(Quotedata);
@@ -19,15 +20,17 @@ function MainContent() {
             filteredData={filteredData}
           />
         </div>
-        <div className="container-anime">
-          {filteredData.length === 0
-            ? animeList.map((anime) => (
-                <CharacterCard anime={anime} key={anime.key} />
-              ))
-            : filteredData.map((anime) => (
-                <CharacterCard anime={anime} key={anime.key} />
-              ))}
-        </div>
+        {filteredData.length === 0 ? (
+          <div className="image_Container" style = {{height:"800px"}}>
+            <img src={MainGif} alt="MainFight" style = {{height:"250px"}} />
+          </div>
+        ) : (
+          <div className="container-anime">
+            {filteredData.map((anime) => (
+              <CharacterCard anime={anime} key={anime.key} />
+            ))}
+          </div>
+        )}
       </div>
     </main>
   );

@@ -7,6 +7,23 @@
 
   --font: "Fira Sans", sans-serif;
   --font-quote: "Fira Code", monospace;
+
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #476a2e;
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #f1f5f8;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #bd0303;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
 }
 
 body {
@@ -63,22 +80,24 @@ blockquote {
   bottom: 0;
 }
 
-button {
-  appearance: none;
-  border: none;
-  outline: none;
-
-  background-color: var(--primary);
-  color: #fff;
-  border-radius: 3rem;
-  padding: 0.75rem 1.5rem;
-  margin-top: 64px;
-  margin-bottom: 64px;
-  transition: 0.4s;
+.RandomButton {
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  padding: 2rem 2rem;
+  letter-spacing: var(--mainSpacing);
+  margin-top: 2rem;
+  transition: var(--mainTransition);
   cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  background: transparent;
+  border-radius: var(--mainBorderRadius);
+  padding: 0.25rem 0.4rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border-color: transparent;
 }
-button:hover {
-  background-color: var(--secondary);
+.RandomButton:hover {
+  background: var(--primaryLightColor);
+  border-color: var(--primaryLightColor);
 }

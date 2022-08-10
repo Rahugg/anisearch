@@ -15,7 +15,6 @@ VARIABLES
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
@@ -27,7 +26,6 @@ h3,
 h4 {
   font-family: var(--slantedFont);
   margin-bottom: 1.25rem;
-  letter-spacing: var(--mainSpacing);
 }
 p {
   margin-bottom: 1.25rem;

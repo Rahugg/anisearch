@@ -43,17 +43,6 @@ function Searchbox({ placeholder, data, setFilteredData, filteredData}) {
           )}
         </div>
       </div>
-      {/* {filteredData.length != 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
-            return (
-              <a className="dataItem" >
-                <p>{value.quote} </p>
-              </a>
-            );
-          })}
-        </div>
-      )} */}
     </div>
   );
 }

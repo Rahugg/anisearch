@@ -19,7 +19,7 @@ const RandomQuote = () => {
   return (
     <div className="App">
       <Quote quote={quote} />
-      <button onClick={activatee}>Generate new Quote</button>
+      <button className="RandomButton"onClick={activatee}>Generate new Quote</button>
     </div>
   );
 };

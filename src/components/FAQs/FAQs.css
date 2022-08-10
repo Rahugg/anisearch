@@ -1,0 +1,10 @@
+.container-FAQ{
+    margin-top:50px ;
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}

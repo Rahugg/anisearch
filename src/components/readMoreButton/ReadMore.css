@@ -1,0 +1,23 @@
+
+.ButtonRead{
+    background-color:transparent;
+    border:none;
+    font-weight: 500;
+    color:#111;
+    cursor:pointer;  
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    background: transparent;
+    border-radius: var(--mainBorderRadius);
+    padding: 0.25rem 0.4rem;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    border-color: transparent;
+}
+.ButtonRead:hover{
+    background: var(--primaryLightColor);
+  border-color: var(--primaryLightColor);
+}

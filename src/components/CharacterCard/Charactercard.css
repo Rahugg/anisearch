@@ -11,19 +11,3 @@
   .mainCharacterList:hover {
     box-shadow: var(--darkShadow);
   }
-  .mainCharacterList-footer {
-    padding: 1.5rem;
-  }
-  .mainCharacterList-footer h3,
-  .mainCharacterList-footer h4,
-  .mainCharacterList-footer p {
-    margin-bottom: 0.3rem;
-  }
-  .mainCharacterList-footer h3 {
-    font-size: 2rem;
-  }
-  .mainCharacterList-footer p {
-    color: var(--darkGrey);
-    margin-bottom: 0.5rem;
-  
-  }

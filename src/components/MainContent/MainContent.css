@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
 }
-
+.image_Container{
+  display: flex;
+  justify-content: center;
+}
 .container-anime{
   grid-gap:100px;
   display: grid;
